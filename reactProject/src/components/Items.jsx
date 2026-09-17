@@ -1,5 +1,5 @@
 function Items(props) {
-  return <li>{props.isPacked ? props.name + "✔" : props.name}</li>;
+  return <li>{props.data.isPacked ? props.data.name + "✔" : props.data.name}</li>;
 }
 
 export default Items;
