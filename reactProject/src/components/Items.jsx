@@ -1,11 +1,5 @@
 function Items(props) {
-  if (props.isPacked) {
-    return (
-      <>
-        <li>{props.name} ✔</li>
-      </>
-    );
-  } else return <li>{props.name} </li>;
+  return <li>{props.isPacked ? props.name + "✔" : props.name}</li>;
 }
 
 export default Items;
