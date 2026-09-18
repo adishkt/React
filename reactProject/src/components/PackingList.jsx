@@ -24,6 +24,10 @@ const items = [
 ];
 
 function PackingList() {
+  function handleClick() {
+    alert("Hey i am clicked");
+  }
+
   return (
     <>
       <h1>List of items</h1>
@@ -32,10 +36,15 @@ function PackingList() {
         return <Items key={item.id} data={item}></Items>;
       })}
 
-      {/* <Items name="Clothes" isPacked={true}></Items>
-      <Items name="Hair Dryer" isPacked={false}></Items>
-      <Items name="PowerBank" isPacked={false}></Items>
-      <Items name="conditioner" isPacked={true}></Items> */}
+      <button onClick={handleClick}>I am a button</button>
+      <button onClick={function handleCli(){
+        alert("hey");
+      }}>I am a button</button>
+
+      <button onClick={() => {
+        alert("hey");
+      }}>I am a button</button>
+
     </>
   );
 }
